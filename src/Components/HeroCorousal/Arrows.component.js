@@ -8,7 +8,7 @@ export const PrevArrow = (props) => {
       className=""
         style={{
           ...props.style,
-          fontSize: "40px", display: 'block', left:"-2px", top: "160px",zIndex:"15", height:"40px", width:"40px", opacity:"0.55", color:"white", backgroundColor:"black", position:"absolute", borderRadius: "4px", paddingLeft:"5px"
+          fontSize: "40px", display: 'block', left:"-3px", top: "160px",zIndex:"15", height:"40px", width:"40px", opacity:"0.55", color:"white", backgroundColor:"black", position:"absolute", borderRadius: "4px", paddingLeft:"4px"
         }}
         onClick={props.onClick}
       >
@@ -43,7 +43,7 @@ export const PrevArrowSm = (props) => {
       className=""
         style={{
           ...props.style,
-          fontSize: "30px", display: 'block', left:"-7px", top: "160px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%" , padding: "4px 3px"
+          fontSize: "30px", display: 'block', left:"-7px", top: "145px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%" , padding: "4px 3px"
         }}
         onClick={props.onClick}
       >
@@ -60,7 +60,7 @@ export const NextArrowSm = (props) => {
          className=""
         style={{
           ...props.style,
-          fontSize: "30px", display: 'block', right:"-7px", top: "160px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%", padding: "4px 5px"
+          fontSize: "30px", display: 'block', right:"-7px", top: "145px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%", padding: "4px 5px"
         }}
         onClick={props.onClick}
       >

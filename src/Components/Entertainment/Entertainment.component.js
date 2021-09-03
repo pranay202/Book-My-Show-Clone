@@ -5,9 +5,9 @@ import { PrevArrowSm, NextArrowSm } from "../HeroCorousal/Arrows.component";
 const Entertainmentcard = (props) => {
   return (
     <>
-      <div className="w-full h-30 px-2">
+      <div className="w-30 h-30 px-3">
         <img
-          className="w-full h-full rounded-xl"
+          className="rounded-xl"
           src={props.src}
           alt= {props.alt}
         />
@@ -36,7 +36,7 @@ const Entertainmentcard = (props) => {
         dots: true,
         arrows: true,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 4,
         InitialSlide: 0,
         prevArrow:<PrevArrowSm/>,
