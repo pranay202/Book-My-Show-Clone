@@ -36,6 +36,7 @@ const Entertainmentcard = (props) => {
         dots: true,
         arrows: true,
         infinite: true,
+        speed: 1200,
         slidesToShow: 5,
         slidesToScroll: 4,
         InitialSlide: 0,

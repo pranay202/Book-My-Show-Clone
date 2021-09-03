@@ -20,7 +20,7 @@ module.exports = {
         navLgColor: 
         {
           50: '#edf1fc',
-          100: '#d3d4e1',
+          100: '#2b3148',
           200: '#b6b8c9',
           300: '#989bb2',
           400: '#7c7f9b',
