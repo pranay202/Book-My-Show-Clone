@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import { PrevArrowSm, NextArrowSm } from "../HeroCorousal/Arrows.component";
+import { PrevArrowSmallest, NextArrowSmallest } from "../HeroCorousal/Arrows.component";
 
-const Entertainmentcard = (props) => {
+const EntertainmentCard = (props) => {
   return (
     <>
-      <div className="w-30 h-30 px-3">
+      <div className="w-30 h-30 px-5">
         <img
           className="rounded-xl"
           src={props.src}
@@ -40,15 +40,15 @@ const Entertainmentcard = (props) => {
         slidesToShow: 5,
         slidesToScroll: 4,
         InitialSlide: 0,
-        prevArrow:<PrevArrowSm/>,
-        nextArrow:<NextArrowSm/>
+        prevArrow:<PrevArrowSmallest/>,
+        nextArrow:<NextArrowSmallest/>,
     }
 
         return (
             <>
             <Slider {...settings} >
             {EntertainmentImage.map((image) => (
-            <Entertainmentcard src={image} />
+            <EntertainmentCard src={image} />
             ))}
             </Slider>
             </>
