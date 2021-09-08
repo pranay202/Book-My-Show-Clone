@@ -80,7 +80,7 @@ export const PrevArrowSmallest = (props) => {
       className=""
         style={{
           ...props.style,
-          fontSize: "30px", display: 'block', left:"-5px", top: "110px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%" , padding: "4px 3px"
+          fontSize: "25px", display: 'block', left:"-3px", top: "100px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%" , padding: "6.5px 5px"
         }}
         onClick={props.onClick}
       >
@@ -97,7 +97,7 @@ export const NextArrowSmallest = (props) => {
          className=""
         style={{
           ...props.style,
-          fontSize: "30px", display: 'block', right:"-7px", top: "110px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%", padding: "4px 5px"
+          fontSize: "25px", display: 'block', right:"-3px", top: "100px",zIndex:"15", height:"40px", width:"40px", opacity:"0.9", color:"white", backgroundColor:"#393E46", position:"absolute", borderRadius: "50%", padding: "6.5px 9px"
         }}
         onClick={props.onClick}
       >

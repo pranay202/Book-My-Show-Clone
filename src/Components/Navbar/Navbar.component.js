@@ -40,7 +40,7 @@ const Navlg = () => {
         {/* // 1st Div */}
         <div className="w-5/12 flex items-center">
           <div w-12 h-12>
-            <img src="" alt="logo" />
+            <img src="../../../public/logo.svg" alt="logo" />
           </div>
           <div className="w-full flex items-center text-sm px-3 py-2 gap-4 bg-white rounded">
             <div>
