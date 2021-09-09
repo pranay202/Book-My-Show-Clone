@@ -13,6 +13,17 @@ const settings = {
 
 export default settings;
 
+export const settingsBg = {
+    arrows: true,
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    InitialSlide: 0,
+    prevArrow:<PrevArrowSm/>,
+    nextArrow:<NextArrowSm/>
+}
+
+
 export const settingsEnt = {
     dots: true,
     arrows: true,

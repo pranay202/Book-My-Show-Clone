@@ -3,7 +3,11 @@ import React from 'react';
 // Components
 import EntertainmentCardSlider from "../Components/Entertainment/Entertainment.component";
 import Premier from "../Components/Premier/Premier.component";
-import PremierBg from "../Components/Premier/PremierBg.component";
+import PosterSlider from "../Components/PosterSlider/PosterSlider.component";
+
+//config 
+import TempPosters from "../config/TempPosters.config";
+import PremierImages from '../config/TempPosters.config';
 
 const HomePage = () => {
     return (
@@ -35,10 +39,17 @@ const HomePage = () => {
             className="w-full h-full mx-auto"
             />
             </div>
-                <PremierBg className="w-full h-full mx-auto" />
+                <PosterSlider className="w-full h-full mx-auto" images={TempPosters} title="Premiers" subtitle="Brand new releases every Friday" isDark="false" />
             </div>
         </div>
 
+        <div className="flex flex-col my-14 gap-7 px-14">      
+        <PosterSlider 
+        images = {PremierImages}
+        title = {Recommended Movies}
+        isDark = {false}
+        />
+        </div>
        </>
     );
 };
