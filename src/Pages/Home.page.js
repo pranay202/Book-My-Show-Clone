@@ -7,7 +7,7 @@ import PosterSlider from "../Components/PosterSlider/PosterSlider.component";
 
 //config 
 import TempPosters from "../config/TempPosters.config";
-import PremierImages from '../config/TempPosters.config';
+// import PremierImages from '../config/TempPosters.config';
 
 const HomePage = () => {
     return (
@@ -43,13 +43,13 @@ const HomePage = () => {
             </div>
         </div>
 
-        <div className="flex flex-col my-14 gap-7 px-14">      
+        {/* <div className="flex flex-col my-14 gap-7 px-14">      
         <PosterSlider 
         images = {PremierImages}
         title = {Recommended Movies}
         isDark = {false}
         />
-        </div>
+        </div> */}
        </>
     );
 };
