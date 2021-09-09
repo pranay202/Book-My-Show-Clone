@@ -43,13 +43,7 @@ const HomePage = () => {
             </div>
         </div>
 
-        {/* <div className="flex flex-col my-14 gap-7 px-14">      
-        <PosterSlider 
-        images = {PremierImages}
-        title = {Recommended Movies}
-        isDark = {false}
-        />
-        </div> */}
+        
        </>
     );
 };
