@@ -22,9 +22,9 @@ const EntertainmentCard = (props) => {
     const EntertainmentCardSlider = () => {
         return (
             <>
-            <Slider {...settingsEnt} >
+            <Slider {...settingsEnt} className="md:grid-flow-row"  >
             {EntertainmentImage.map((image) => (
-            <EntertainmentCard src={image} />
+            <EntertainmentCard src={image} className="md:grid-flow-row"  />
             ))}
             </Slider>
             </>
