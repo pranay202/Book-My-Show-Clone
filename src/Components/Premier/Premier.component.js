@@ -6,7 +6,7 @@ import Poster from "../Poster/Poster.component";
 
 // config
 import settings from "../../config/PosterCorousal.config";
-import PremierImages from "../../config/TempPosters.config";
+import {PremierImages} from "../../config/TempPosters.config";
 
 export const Premier = (props) => {
 

@@ -3,21 +3,21 @@ import Slider from "react-slick";
 import {settingsBg} from "../../config/PosterCorousal.config";
 
 // config
-import { PremierBgImages } from "../../config/TempPosters.config";
+// import  PremierImages  from "../../config/TempPosters.config";
 
 //component 
-import { PosterBg } from "../Poster/Poster.component";
+import Poster  from "../Poster/Poster.component";
 
 const PosterSlider = (props) => {
     return(
         <>
-        <div className="flex flex-col items-start py-2 mx-5">
-            <h3 className="text-xl leading-tight font-bold text-white">{props.title}</h3>
-            <p className="font-semibold text-white">{props.subtitle}</p>
+        <div className="flex flex-col items-start pb-4 mx-5">
+            <h3 className="text-2xl leading-tight font-bold dark:text-gray-300 text-gray-700">{props.title}</h3>
+            <p className="font-semibold dark:text-gray-300 text-gray-700">{props.subtitle}</p>
         </div>
         <Slider { ...settingsBg}>
-            {PremierBgImages.map((image) => (
-                <PosterBg { ...image} isDark={props.isDark} />
+            {props.images.map((image) => (
+                <Poster { ...image} isDark={props.isDark} />
             ))}
         </Slider>
         </>
