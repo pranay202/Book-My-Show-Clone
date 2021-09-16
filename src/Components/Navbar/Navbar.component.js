@@ -1,13 +1,18 @@
 import React from "react";
-import { BiChevronRight, BiSearch, BiChevronDown, BiMenu } from "react-icons/bi";
+import { BiSearch, BiMenu } from "react-icons/bi";
+// import DropDown from "../Dropdown/DropDownHandler.component.js";
+
+// components
+import Dropdown from "../Dropdown/Dropdown.component";
+
 const Navsm = () => {
   return (
     <>
       <div className="text-white flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold">It All Starts Here</h1>
-          <span className="text-gray-400 text-xs flex items-center">
-            Bhubaneshwar <BiChevronRight />
+          <span className="text-gray-400 text-xs flex items-center z-50">
+            <Dropdown />
           </span>
         </div>
         <div className="w-6 h-6">
@@ -56,8 +61,8 @@ const Navlg = () => {
 
         {/* // 2nd Div */}
         <div className="flex items-center gap-5">
-          <div className="text-gray-300 text-sm flex items-center hover:text-white cursor-pointer">
-            Bhubaneshwar <BiChevronDown />
+          <div className="text-gray-300 z-50 text-sm flex items-center hover:text-white cursor-pointer">
+          <Dropdown/>
           </div>
           <button className="bg-btColor-400 text-gray-50 text-xs px-4 py-1 rounded">
               Sign In

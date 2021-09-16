@@ -16,6 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Pages
 import HomePage from "./Pages/Home.page";
 import Movie from "./Pages/Movie.page";
+// import MovieHero from "./Components/MovieHero/MovieHero.component";
 
 
 function App() {
