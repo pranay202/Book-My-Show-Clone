@@ -1,5 +1,8 @@
-import React from "react";
+import React,{ useState , useEffect} from "react";
 import HeroSlider from "react-slick";
+
+//axios
+import axios from "axios";
 
 //Arrow Component
 import { PrevArrow , NextArrow } from "./Arrows.component";
@@ -35,13 +38,22 @@ const HeroCorousal = () => {
     nextArrow: <NextArrow/>
   };
 
-const images = [
-    "https://in.bmscdn.com/promotions/cms/creatives/1630474590730_mardkodardnhihota_1240x300_1sep.jpg",
-    "https://in.bmscdn.com/promotions/cms/creatives/1629830049996_celebfiecruisewiththestarsrevised_webshowcase_1240x300_24aug.jpg",
-    "https://in.bmscdn.com/promotions/cms/creatives/1628591224466_fnbgeneric.jpg",
-    "https://in.bmscdn.com/promotions/cms/creatives/1630640289124_breakingsurface_1240x300.jpg",
-    "https://in.bmscdn.com/promotions/cms/creatives/1630608713679_matrixfightnight6_webshowcase_1240x300.jpg"
-];
+  const [images, setImages] = useState([]);
+  useEffect(() => {
+      const reqNowPlayingImages = async() => {
+          const getImages = await axios.get("/movies/now_playing");
+          console.log(getImages);
+      };
+      reqNowPlayingImages();
+  },[])
+
+// const images = [
+//     "https://in.bmscdn.com/promotions/cms/creatives/1630474590730_mardkodardnhihota_1240x300_1sep.jpg",
+//     "https://in.bmscdn.com/promotions/cms/creatives/1629830049996_celebfiecruisewiththestarsrevised_webshowcase_1240x300_24aug.jpg",
+//     "https://in.bmscdn.com/promotions/cms/creatives/1628591224466_fnbgeneric.jpg",
+//     "https://in.bmscdn.com/promotions/cms/creatives/1630640289124_breakingsurface_1240x300.jpg",
+//     "https://in.bmscdn.com/promotions/cms/creatives/1630608713679_matrixfightnight6_webshowcase_1240x300.jpg"
+// ];
 
 return (
     <>
