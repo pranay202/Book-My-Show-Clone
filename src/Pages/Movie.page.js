@@ -24,6 +24,9 @@ const Movie = () => {
                        <p className="text-sm text-gray-600">Get Rs.75* off on 3 movies you buy/rent on Stream. Buy Filmy Pass @Rs.99</p>
                    </div>
                </div>
+                   <div className="my-6">
+                    <hr/>
+                   </div>
            </div>
        </div>
         </>
