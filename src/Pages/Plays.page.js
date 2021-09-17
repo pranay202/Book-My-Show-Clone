@@ -5,7 +5,7 @@ import MyDisclosure from "../Components/PlaysFilters/PlaysFilters.component";
 const Plays = () => {
     return(
         <>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 bg-opacity-50 bg-gray-50">
             <div className="w-full lg:flex lg:flex-row-reverse">
             <div className="flex flex-col items-start mt-7 lg:w-8/12">
                 <h2 className="text-gray-900 text-2xl font-bold ml-5 mb-7">Plays in Bhubaneshwar</h2>
@@ -68,10 +68,13 @@ const Plays = () => {
                     </div>                   
                 </div>            
             </div>
-            <div className="my-7 lg:w-1/4 flex flex-col items-start">
-            <h2 className="text-gray-900 text-2xl font-bold ml-5 mb-7">Filters</h2>
-            <div className="">
-                <MyDisclosure />
+            <div className="my-7 ml-0 lg:w-1/4 flex flex-col items-start">
+            <h2 className="text-gray-900 text-2xl font-bold ml-5">Filters</h2>
+            <div className=" bg-opacity-100 rounded-md p-2">
+                <MyDisclosure title="Date" tags={["Today", "Tomorrow", "This Weekend"]} />
+                <MyDisclosure title="Languages" tags={["Tamil", "English", "Kannada"]} />
+                <MyDisclosure title="Category" tags={["Theatre"]} />
+                <MyDisclosure title="Genres" tags={["Drama","Adaption", "Historical","Online Streaming Plays"]} />
             </div>
             </div>
             </div>
