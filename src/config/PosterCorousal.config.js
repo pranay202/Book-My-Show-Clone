@@ -2,7 +2,7 @@ import { PrevArrowSm, NextArrowSm } from "../Components/HeroCorousal/Arrows.comp
 import { PrevArrowSmallest, NextArrowSmallest } from "../Components/HeroCorousal/Arrows.component";
 
 const settings = {
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: false,
     slidesToShow: 5,
