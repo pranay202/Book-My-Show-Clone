@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{useState , useEffect} from 'react';
+import axios from 'axios';
 
 // Components
 import EntertainmentCardSlider from "../Components/Entertainment/Entertainment.component";
-// import Premier from "../Components/Premier/Premier.component";
 import PosterSlider, { PosterSliderBg } from "../Components/PosterSlider/PosterSlider.component";
 
 //config 
@@ -10,6 +10,28 @@ import {StreamingImages , PremierImages } from "../config/TempPosters.config";
 import TempPosters from '../config/TempPosters.config';
 
 const HomePage = () => {
+
+const [popularMovies, setPopularMovies] = useState([]);
+useEffect(() => {
+  const requestPopularMovies = async() => {
+    const getPopularMovies = await axios.get("/movie/popular");
+    setPopularMovies(getPopularMovies.data.results);
+  };
+  requestPopularMovies();
+}, []);
+
+
+// const [RecommendedMovies, setRecommendedMovies] = useState([]);
+// useEffect(() => {
+//   const requestRecommendedMovies = async() => {
+//     const getRecommendedMovies = await axios.get(`/movie/{movie_id}/recommendations`);
+//     // setRecommendedMovies(getRecommendedMovies.data.results);
+//     console.log(getRecommendedMovies);
+//   };
+//   requestRecommendedMovies();
+// }, []);
+
+
     return (
         <>
         <div className="flex flex-col my-14 gap-7 px-14">
@@ -40,10 +62,10 @@ const HomePage = () => {
             className="w-full h-full mx-auto"
             />
             </div>
-                <PosterSliderBg className="w-full h-full mx-auto" images={TempPosters} title="Premiers" subtitle="Brand new releases every Friday" isDark="true" />
+                <PosterSliderBg className="w-full h-full mx-auto" images={popularMovies} title="Premiers" subtitle="Brand new releases every Friday" isDark="true" />
             </div>
         </div>
-
+         {/* above here, you can use Temp posters which is your local data. */}
         <div className="flex flex-col my-14 gap-7 px-14">
       <div className="container mx-auto px-12">
         <PosterSlider

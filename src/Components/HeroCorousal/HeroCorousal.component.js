@@ -13,6 +13,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const HeroCorousal = () => {
+    const [images, setImages] = useState([]);
+    useEffect(() => {
+        const requestNowPlayingMovies = async() => {
+            const getImages = await axios.get("/movie/now_playing");
+            setImages(getImages.data.results);
+        };
+        requestNowPlayingMovies();
+    },[])
 
   const settingsLg = {
       arrows: true,
@@ -28,7 +36,7 @@ const HeroCorousal = () => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
     speed: 500,
@@ -38,14 +46,6 @@ const HeroCorousal = () => {
     nextArrow: <NextArrow/>
   };
 
-  const [images, setImages] = useState([]);
-  useEffect(() => {
-      const reqNowPlayingImages = async() => {
-          const getImages = await axios.get("/movies/now_playing");
-          console.log(getImages);
-      };
-      reqNowPlayingImages();
-  },[])
 
 // const images = [
 //     "https://in.bmscdn.com/promotions/cms/creatives/1630474590730_mardkodardnhihota_1240x300_1sep.jpg",
@@ -62,7 +62,10 @@ return (
     <HeroSlider {...settings}>
         {images.map((image) => (
             <div className="w-full h-64 md:h-80 p-3">
-                <img src={image} alt="testing" className="w-full h-full rounded-md"/>
+                <img 
+                src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`} 
+                alt="testing" 
+                className="w-full h-full rounded-md"/>
             </div>
         ))}
     </HeroSlider>
@@ -72,7 +75,10 @@ return (
     <HeroSlider {...settingsLg}>
         {images.map((image) => (
             <div className="w-full h-96 px-2 py-3">
-                <img src={image} alt="testing" className="w-full h-full rounded-md"/>
+                <img 
+                src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`} 
+                alt="testing" 
+                className="w-full h-full rounded-md"/>
             </div>
         ))}
     </HeroSlider>
