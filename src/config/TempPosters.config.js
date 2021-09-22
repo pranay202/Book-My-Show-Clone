@@ -147,7 +147,7 @@ export const StreamingImages = [
 ];
 
 
-export const Cast = [
+export const CastImages = [
     {
         title: "Amitabh Bachhan",
         subTitle: "as Lateef Zhaidi ",
@@ -164,7 +164,7 @@ export const Cast = [
         src:"https://in.bmscdn.com/iedb/artist/images/website/poster/large/rhea-chakraborty-34803-08-05-2017-17-01-50.jpg"
     },  
     {
-        title: " ",
+        title: "Dhritiman Chatterjee",
         subTitle: "as Jagdish Acharya",
         src:"https://in.bmscdn.com/iedb/artist/images/website/poster/large/dhritiman-chatterjee-584-05-06-2018-12-20-25.jpg"
     }

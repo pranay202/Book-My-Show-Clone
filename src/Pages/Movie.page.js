@@ -1,10 +1,10 @@
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 // import {settingsBg} from "../config/PosterCorousal.config";
 
 import MovieHero from "../Components/MovieHero/MovieHero.component";
 import { BiCameraMovie } from "react-icons/bi";
-import {Cast} from "../config/TempPosters.config";
+import {CastImages} from "../config/TempPosters.config";
 import { CastSlider } from "../Components/PosterSlider/PosterSlider.component";
 
 const Movie = (props) => {
@@ -38,9 +38,9 @@ const Movie = (props) => {
            </div>
 
            {/* //Cast */}
-           <div className="">
+           <div className="flex flex-col gap-2">
                <h2 className="text-gray-800 font-bold text-xl lg:text-2xl">Cast</h2>
-               <CastSlider className="w-full h-full mx-auto" images={props.src}  title={props.title} subTitle={props.subTitle}/>
+               <CastSlider className="w-full h-full mx-auto" images={CastImages}  title={props.title} subTitle={props.subTitle}/>
            </div>
            <div className="my-8">
                <hr/>
