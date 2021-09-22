@@ -145,3 +145,28 @@ export const StreamingImages = [
         src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxOSBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00314756-dgdccldkaz-portrait.jpg"
     },
 ];
+
+
+export const Cast = [
+    {
+        title: "Amitabh Bachhan",
+        subTitle: "as Lateef Zhaidi ",
+        src:"https://in.bmscdn.com/iedb/artist/images/website/poster/large/amitabh-bachchan-138-12-09-2017-02-34-37.jpg"
+    },
+    {
+        title: "Emraan Hashmi",
+        subTitle: "as Sameer Mehra",
+        src:"https://in.bmscdn.com/iedb/artist/images/website/poster/large/emraan-hashmi-651-13-09-2016-06-29-11.jpg"
+    },
+    {
+        title: "Rhea Chakraborty",
+        subTitle: "as Aana",
+        src:"https://in.bmscdn.com/iedb/artist/images/website/poster/large/rhea-chakraborty-34803-08-05-2017-17-01-50.jpg"
+    },  
+    {
+        title: " ",
+        subTitle: "as Jagdish Acharya",
+        src:"https://in.bmscdn.com/iedb/artist/images/website/poster/large/dhritiman-chatterjee-584-05-06-2018-12-20-25.jpg"
+    }
+    
+]

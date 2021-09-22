@@ -21,14 +21,17 @@ const settings = {
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,
-                arrows: false
+                swipeToSlide:true,
+                arrows: false,
+                dots: false
             },
         },
         {
             breakpoint: 420,
             settings: {
                 slidesToShow: 1,
-                arrows: false
+                arrows: false,
+                dots: false
             }
         }
     ]
@@ -56,8 +59,9 @@ export const settingsBg = {
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 2,
-                arrows:false,
-                dots: true
+                swipeToSlide:true,
+                arrows: false,
+                dots: false
             },
         },
         {
@@ -65,8 +69,8 @@ export const settingsBg = {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows:false,
-                dots: true
+                arrows: false,
+                dots: false
             }
         }
     ]
@@ -95,17 +99,18 @@ export const settingsEnt = {
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 2,
+                swipeToSlide:true,
                 arrows: false,
-                dots: true
+                dots: false
             },
         },
         {
-            breakpoint: 425,
+            breakpoint: 440,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows:false,
-                dots: true
+                arrows: false,
+                dots: false
             }
         }
     ]

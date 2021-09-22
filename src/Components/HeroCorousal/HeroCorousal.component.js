@@ -32,7 +32,26 @@ const HeroCorousal = () => {
       centerPadding: "300px",
       infinite:true,
       prevArrow: <PrevArrow/>,
-      nextArrow: <NextArrow/>
+      nextArrow: <NextArrow/>,
+      responsive: [
+        
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: false
+            },
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: false
+            }
+        }
+    ]
   }
 
   const settings = {
@@ -43,7 +62,31 @@ const HeroCorousal = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <PrevArrow/>,
-    nextArrow: <NextArrow/>
+    nextArrow: <NextArrow/>,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: false
+            },
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: false
+            }
+        }
+    ]
   };
 
 
@@ -71,7 +114,7 @@ return (
     </HeroSlider>
     </div>
 
-    <div className="hidden lg:block">
+    <div className="hidden lg:block bg-gray-100">
     <HeroSlider {...settingsLg}>
         {images.map((image) => (
             <div className="w-full h-96 px-2 py-3">

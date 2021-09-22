@@ -5,14 +5,14 @@ const Navsm = () => {
     <>
       <div className="text-gray-900 flex items-center justify-between">
         <div className="flex items-start">
-        <div className="w-6 h-6">
+        <div className="w-7 h-7">
             <BiChevronLeft className="w-full h-full"/>
         </div>
         <div>
-          <h1 className="text-xl font-bold">It All Starts Here</h1>          
+          <h1 className="text-xl font-bold text-outline-white">It All Starts Here</h1>          
         </div>
         </div>
-        <div className="w-6 h-6">
+        <div className="w-6 h-6 text-outline-white">
           <BiShareAlt className="w-full h-full" />
         </div>
       </div>

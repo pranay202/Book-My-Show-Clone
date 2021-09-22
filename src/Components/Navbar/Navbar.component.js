@@ -1,5 +1,5 @@
 import React from "react";
-import { BiSearch, BiMenu } from "react-icons/bi";
+import { BiSearch, BiMenu, BiChevronDown } from "react-icons/bi";
 // import DropDown from "../Dropdown/DropDownHandler.component.js";
 
 // components
@@ -12,7 +12,7 @@ const Navsm = () => {
         <div>
           <h1 className="text-2xl font-bold">It All Starts Here</h1>
           <span className="text-gray-400 text-xs flex items-center z-50">
-            <Dropdown />
+            Bhubaneshwar <BiChevronDown/>
           </span>
         </div>
         <div className="w-6 h-6">
