@@ -7,7 +7,7 @@ import PosterSlider, { PosterSliderBg } from "../Components/PosterSlider/PosterS
 
 //config 
 import {StreamingImages , PremierImages } from "../config/TempPosters.config";
-import TempPosters from '../config/TempPosters.config';
+// import TempPosters from '../config/TempPosters.config';
 
 const HomePage = () => {
 

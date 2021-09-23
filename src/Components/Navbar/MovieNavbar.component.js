@@ -1,5 +1,7 @@
 import React from "react";
-import { BiSearch, BiChevronDown, BiMenu, BiShareAlt, BiChevronLeft } from "react-icons/bi";
+import { BiSearch, BiMenu, BiShareAlt, BiChevronLeft } from "react-icons/bi";
+import Dropdown from "../Dropdown/Dropdown.component";
+
 const Navsm = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const Navsm = () => {
           <h1 className="text-xl font-bold text-outline-white">It All Starts Here</h1>          
         </div>
         </div>
-        <div className="w-6 h-6 text-outline-white">
+        <div className="w-6 h-6 text-gray-500">
           <BiShareAlt className="w-full h-full" />
         </div>
       </div>
@@ -44,7 +46,7 @@ const Navlg = () => {
           <div className="w-40 h-full mr-2">
             <img src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="logo" />
           </div>
-          <div className="w-full flex items-center text-sm px-3 py-2 gap-4 border-2 border-gray-400 rounded">
+          <div className="w-full flex items-center text-sm px-3 py-2 gap-4 bg-white rounded">
             <div>
               <BiSearch className="w-full h-full text-grey-100 text-md" />
             </div>
@@ -58,13 +60,13 @@ const Navlg = () => {
 
         {/* // 2nd Div */}
         <div className="flex items-center gap-5">
-          <div className="text-gray-700 text-sm flex items-center hover:text-gray-900 cursor-pointer">
-            Bhubaneshwar <BiChevronDown />
+          <div className="text-gray-50 text-sm flex items-center hover:text-gray-400 cursor-pointer">
+            <Dropdown />
           </div>
           <button className="bg-btColor-400 text-gray-50 text-xs px-4 py-1 rounded">
               Sign In
           </button>
-          <div className="w-8 h-8 text-gray-900">
+          <div className="w-8 h-8 text-white">
               <BiMenu className="w-full h-full" />
           </div>
 
@@ -77,7 +79,7 @@ const Navlg = () => {
 const MovieNavbar = () => {
   return (
     <>
-      <nav className="absolute inset-x-0 z-30 bg-opacity-5 backdrop-filter backdrop-blur-lg px-4 py-2 lg:relative">
+      <nav className="lg:bg-navLgColor-700 absolute inset-x-0 z-30 bg-opacity-5 backdrop-filter backdrop-blur-lg px-4 py-2 lg:relative">
         <div className="md:hidden">
           {
             /* ***Mobile screen*** */
