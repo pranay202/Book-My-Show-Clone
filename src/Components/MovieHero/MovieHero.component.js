@@ -2,7 +2,24 @@ import React from "react";
 import { BiChevronRight } from "react-icons/bi";
 import {FcLike} from "react-icons/fc";
 
-const MovieHero = () => {
+const launchRazorpay = () => {
+    let options = {
+        key: "rzp_test_VHws7fEZvdkwI4",
+        amount: 100,
+        currency: "USD",
+        name: "Book My Show",
+        description: "Movie purchase on rental",
+        image: "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+        handler: () => {
+            alert("Payment Done!");
+        },
+        theme: {color: "#c4242d"}
+    };
+    let rzp =new window.Razorpay(options);
+    rzp.open();
+};
+
+export const MovieHero = () => {
     return (
         <>
         <div className="md:hidden">
@@ -29,8 +46,8 @@ const MovieHero = () => {
                 className="w-4/5 h-5/6 rounded-xl"
                 />   
             </div>
-           <div className="flex flex-col items-start gap-5">
-               <h1 className="text-3xl font-bold text-white">Chehre</h1>
+           <div className="flex flex-col items-start gap-4 z-70">
+               <h1 className="text-5xl font-bold text-white">Chehre</h1>
                <div className="flex flex-row gap-2">
                <FcLike className="w-1/6 h-1/5 text-xl"/>
                <span className="text-xl text-white font-bold">66%</span>
@@ -57,7 +74,7 @@ const MovieHero = () => {
                 <span className="text-white ">• &nbsp; UA</span> 
                 <span className="text-white ">• &nbsp; 27 August, 2021</span> 
                </div>
-               <button className="text-lg font-semibold mt-1 py-2 px-3 text-white bg-btColor-400 rounded-lg">Book now</button>
+               <button onClick={launchRazorpay} className="text-md font-semibold mt-1 py-3 px-14 text-white bg-btColor-400 rounded-lg">Book tickets</button>
            </div> 
             </div>
             <img src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/chehre-et00102880-25-08-2021-07-26-46.jpg"
